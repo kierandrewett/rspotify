@@ -32,6 +32,7 @@ where
 #[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq)]
 pub struct SimplifiedPlaylist {
     pub collaborative: bool,
+    pub description: Option<String>,
     pub external_urls: HashMap<String, String>,
     pub href: String,
     pub id: PlaylistId<'static>,
